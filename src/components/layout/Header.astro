@@ -5,11 +5,11 @@ const menuitems = [
     path: "/#home",
   },
   {
-    title: "About",
+    title: "Nosotros",
     path: "/#about",
   },
   {
-    title: "Pricing",
+    title: "Precios",
     path: "/#pricing",
   },
   {
@@ -17,24 +17,24 @@ const menuitems = [
     path: "/#team",
   },
   {
-    title: "Contact",
+    title: "Contacto",
     path: "/#contact",
   },
   {
-    title: "Blog",
+    title: "Apinformatica",
     path: "/blog",
   },
   {
-    title: "Pages",
+    title: "Menu",
     path: "javascript:void(0)",
     children: [
-      { title: "About Page", path: "/about" },
-      { title: "Pricing Page", path: "/pricing" },
-      { title: "Contact Page", path: "/contact" },
-      { title: "Blog Grid Page", path: "/blog" },
-      { title: "Sign Up Page", path: "/signup" },
-      { title: "Sign In Page", path: "/signin" },
-      { title: "404 Page", path: "/404" },
+      { title: "Nosotros", path: "/about" },
+      { title: "Precios", path: "/pricing" },
+      { title: "Contacto", path: "/contact" },
+      { title: "Apinformatica", path: "/blog" },
+      { title: "Servicios", path: "/signup" },
+      { title: "Conversemos", path: "/signin" },
+      
     ],
   },
 ];
@@ -47,13 +47,13 @@ const menuitems = [
         <a href="/" class="navbar-logo block w-full py-5">
           {(Astro.url.pathname === '/') ? (
             <img
-              src="/assets/logo/logo-white.svg"
+              src="/assets/logo/logo blanco.png"
               alt="logo"
               class="header-logo w-full"
             />
           ) : (
-            <img src="/assets/logo/logo.svg" alt="logo" class="w-full dark:hidden" />
-            <img src="/assets/logo/logo-white.svg" alt="logo" class="w-full hidden dark:block" />
+            <img src="/assets/logo/aperp logo tr.pbg" alt="logo" class="w-full dark:hidden" />
+            <img src="/assets/logo/logo blanco.png" alt="logo" class="w-full hidden dark:block" />
           )}
           
         </a>
@@ -180,13 +180,13 @@ const menuitems = [
               href="/signin"
               class={`${Astro.url.pathname === '/' ? 'loginBtn py-2 px-[22px] text-base font-medium text-white hover:opacity-70' : 'loginBtn py-2 px-[22px] text-base font-medium text-dark dark:text-white hover:opacity-70'}`}
             >
-              Sign In
+             Sistema
             </a>
             <a
               href="/signup"
               class={`${Astro.url.pathname === '/' ? 'signUpBtn rounded-md bg-white bg-opacity-20 py-2 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark' : 'signUpBtn rounded-md bg-primary py-2 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-blue-dark'}`}
             >
-              Sign Up
+              Demo
             </a>
           </div>
         </div>
